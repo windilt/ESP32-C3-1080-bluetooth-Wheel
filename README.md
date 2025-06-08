@@ -7,7 +7,7 @@ DIY ESP32-C3 1080° bluetooth Wheel with arduino
 
 **请把方向盘回中再接通电源，上电时的角度会自动设置为原点
 
-**linux下会遇到方向盘有很大死区的问题，对于ETS2这样的游戏很不友好。愿意是evdev API会自动设置死区和fuzz（移动死区）。参考Arch wiki, 可以运行以下命令设置死区为0
+**linux下会遇到方向盘有很大死区的问题，对于ETS2这样的游戏很不友好。原因是evdev API会自动设置死区和fuzz（移动死区）。参考Arch wiki, 可以运行以下命令设置死区为0
 
 evdev-joystick --evdev /dev/input/eventXX --deadzone 0 --fuzz 0
 
